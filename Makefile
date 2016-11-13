@@ -3,8 +3,7 @@ TARGET	?= m68k-elf-
 AS	 = $(TARGET)as
 OBJCOPY	 = $(TARGET)objcopy
 
-all:
-	nop.bin
+all: nop.bin
 
 %.elf: %.s
 	$(AS)	-o $@	$<
