@@ -8,3 +8,6 @@ OBJCOPY	 = $(TARGET)objcopy
 
 %.s19: %.elf
 	$(OBJCOPY)	-O srec	$<	$@
+
+clean:
+	rm	-f	*.elf *.s19
